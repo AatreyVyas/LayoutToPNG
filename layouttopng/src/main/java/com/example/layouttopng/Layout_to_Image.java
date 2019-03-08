@@ -53,7 +53,7 @@ public class Layout_to_Image {
         try {
             File root = new File(Environment.getExternalStorageDirectory()+ File.separator + folderName + File.separator);
             root.mkdirs();
-            File sdImageMainDirectory = new File(root, fileName);
+            File sdImageMainDirectory = new File(root, fileName+".PNG");
             outputFileUri = Uri.fromFile(sdImageMainDirectory);
             fOut = new FileOutputStream(sdImageMainDirectory);
         } catch (Exception e) {
